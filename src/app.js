@@ -30,9 +30,9 @@ function newCard() {
   let end = document.querySelector("#end");
   let number = document.querySelector("#number");
   // Asigno lo generado a los innerHTML
-  top.innerTML = suits(indexSuits);
+  top.innerHTML = suits(indexSuits);
   end.innerHTML = suits[indexSuits];
-  number.innerTML = numbers[indexNumbers];
+  number.innerHTML = numbers[indexNumbers];
   // Determino el color
   let currentClass =
     suits[indexSuits] == "♦" || suits[indexSuits] == "♥"
@@ -52,3 +52,4 @@ window.onload = function() {
 
 let btnNewCard = document.querySelector("#btnNewCard");
 btnNewCard.addEventListener("click", () => newCard());
+
